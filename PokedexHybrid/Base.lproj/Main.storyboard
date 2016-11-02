@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PokedexHybrid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="A0c-Qa-ibQ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="dxq-Ag-mAE"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aka-KB-5QZ">
+                                <rect key="frame" x="16" y="140" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oqM-Bm-cZ3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBq-6W-ul4">
+                                <rect key="frame" x="16" y="178" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MIR-xd-74i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTa-vy-uOl">
+                                <rect key="frame" x="16" y="216" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fe6-Ep-otj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aka-KB-5QZ" firstAttribute="top" secondItem="A0c-Qa-ibQ" secondAttribute="bottom" constant="68" id="0jF-1z-lGJ"/>
+                            <constraint firstItem="oBq-6W-ul4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4gt-D0-szP"/>
+                            <constraint firstItem="XTa-vy-uOl" firstAttribute="top" secondItem="oBq-6W-ul4" secondAttribute="bottom" constant="8" id="57O-rt-FHF"/>
+                            <constraint firstItem="oBq-6W-ul4" firstAttribute="top" secondItem="aka-KB-5QZ" secondAttribute="bottom" constant="8" id="M3X-KA-kB1"/>
+                            <constraint firstItem="A0c-Qa-ibQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="RjP-jE-ff2"/>
+                            <constraint firstItem="XTa-vy-uOl" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ss4-zZ-Tr6"/>
+                            <constraint firstItem="aka-KB-5QZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="TYT-Oi-XA3"/>
+                            <constraint firstItem="XTa-vy-uOl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Vs6-bV-Yu6"/>
+                            <constraint firstItem="A0c-Qa-ibQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ahY-tM-9Io"/>
+                            <constraint firstItem="oBq-6W-ul4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eed-m9-lK4"/>
+                            <constraint firstAttribute="trailing" secondItem="A0c-Qa-ibQ" secondAttribute="trailing" id="hLs-b5-4Pj"/>
+                            <constraint firstItem="XTa-vy-uOl" firstAttribute="top" secondItem="oBq-6W-ul4" secondAttribute="bottom" constant="8" id="i9Z-Mv-Rpf"/>
+                            <constraint firstItem="aka-KB-5QZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ihL-Au-Jax"/>
+                            <constraint firstItem="oBq-6W-ul4" firstAttribute="top" secondItem="aka-KB-5QZ" secondAttribute="bottom" constant="8" id="kI8-LS-YtZ"/>
+                            <constraint firstItem="aka-KB-5QZ" firstAttribute="top" secondItem="A0c-Qa-ibQ" secondAttribute="bottom" constant="68" id="nE7-cV-8l4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="abilitiesLabel" destination="XTa-vy-uOl" id="Jsl-Yq-iRO"/>
+                        <outlet property="idLabel" destination="oBq-6W-ul4" id="qO9-5L-b9G"/>
+                        <outlet property="nameLabel" destination="aka-KB-5QZ" id="bdo-w9-dEJ"/>
+                        <outlet property="searchBar" destination="A0c-Qa-ibQ" id="Ta0-Do-Kew"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
