@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UISearchBarDelegate {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var nameLabel: UILabel!
@@ -17,14 +17,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        searchBar.delegate = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let searchTerm = searchBar.text else { return }
+        PokemonController.fetchPokemon(forSearchTerm: searchTerm) { (pokemon) in
+            guard let pokemon = pokemon else { return }
+            
+            DispatchQueue.main.async {
+                self.nameLabel.text = pokemon.name
+                self.idLabel.text = "\(pokemon.identifier)"
+                self.abilitiesLabel.text = "Abilities: \(pokemon.abilities.joined(separator: ", "))"
+            }
+        }
     }
-
-
 }
 
